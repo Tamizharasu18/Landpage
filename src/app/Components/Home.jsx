@@ -27,7 +27,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className='flex max-w-[1300px] mx-auto relative top-[200px] justify-between pr-[100px]'>
+        <div className='hidden md:flex max-w-[1350px] mx-auto relative top-[200px] justify-between pr-[100px] px-[20px]'>
             <div ref={textRef} className='max-w-[300px]'>
                 <h2 className='text-[34px] font-semibold uppercase  text-[#472717]'>photography</h2>
                 <p className='text-[#03409A] font-semibold text-[18px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
