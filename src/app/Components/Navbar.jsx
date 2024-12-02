@@ -89,77 +89,78 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                {/* Hamburger Menu Button */}
-                <button
-                    onClick={toggleMenu}
-                    className="md:hidden text-[#472717] focus:outline-none"
-                    aria-label="Toggle Menu"
-                >
-                    {isMenuOpen ? (
-                        // Close Icon (SVG)
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                            className="w-8 h-8"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M6 18L18 6M6 6l12 12"
-                            />
-                        </svg>
-                    ) : (
-                        // Hamburger Icon (SVG)
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                            className="w-8 h-8"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M4 6h16M4 12h16m-7 6h7"
-                            />
-                        </svg>
-                    )}
-                </button>
-            </div>
-
-            {/* Mobile Menu */}
-            <div
-                className={`${isMenuOpen ? "block" : "hidden"
-                    } md:hidden flex flex-col space-y-4 mt-4 bg-[#F8F8F8] rounded-lg p-6`}
+                 {/* Hamburger Menu */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden text-[#472717] focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          {isMenuOpen ? (
+            // Close Icon (SVG)
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-8 h-8"
             >
-                <a
-                    href="#home"
-                    className="text-[18px] font-mono text-[#472717] hover:underline"
-                >
-                    Home
-                </a>
-                <a
-                    href="#modeling"
-                    className="text-[18px] font-mono text-[#472717] hover:underline"
-                >
-                    Modeling
-                </a>
-                <a
-                    href="#fashion"
-                    className="text-[18px] font-mono text-[#472717] hover:underline"
-                >
-                    Fashion
-                </a>
-                <a
-                    href="#contact"
-                    className="text-[18px] font-mono text-[#472717] hover:underline"
-                >
-                    Contact
-                </a>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          ) : (
+            // Hamburger Icon (SVG)
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-8 h-8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`${
+          isMenuOpen ? "block" : "hidden"
+        } md:hidden flex flex-col space-y-4 mt-4 bg-[#F8F8F8] rounded-lg p-6`}
+      >
+        <a
+          href="#home"
+          className="text-[18px] font-mono text-[#472717] hover:underline"
+        >
+          Home
+        </a>
+        <a
+          href="#modeling"
+          className="text-[18px] font-mono text-[#472717] hover:underline"
+        >
+          Modeling
+        </a>
+        <a
+          href="#fashion"
+          className="text-[18px] font-mono text-[#472717] hover:underline"
+        >
+          Fashion
+        </a>
+        <a
+          href="#contact"
+          className="text-[18px] font-mono text-[#472717] hover:underline"
+        >
+          Contact
+        </a>
             </div>
         </div>
     );

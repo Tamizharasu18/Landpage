@@ -24,7 +24,7 @@ const Overlay = () => {
                 <div className='bg-[#F5C096] w-[50%]'></div>
                 <div className='bg-[#03409A] w-[50%]'></div>
             </div>
-            <div className='absolute top-0 left-0 right-0 -z-10 h-[100vh] bg'>
+            <div className='absolute top-0 left-0 right-0 -z-999 h-[100vh] bg'>
                 <Navbar />
                 <Home/>
             </div>
