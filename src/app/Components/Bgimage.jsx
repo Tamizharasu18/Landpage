@@ -31,9 +31,8 @@ const Bgimage = () => {
     }, []);
 
     return (
-        <div>
+        <div className="py-[100px]">
             <div className='img-container' ref={bgImageRef}></div>
-            <div className='h-[50vh] bg-white'></div>
         </div>
     )
 }
